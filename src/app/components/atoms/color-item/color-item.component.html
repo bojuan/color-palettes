@@ -1,0 +1,17 @@
+<div
+  class="color"
+  [style.background-color]="codeHexa"
+  (mouseenter)="onHover()"
+  (mouseleave)="onLeave()"
+  (click)="onClick()"
+>
+  <div class="color__name-container">
+    <span class="color__name">{{ name }}</span>
+  </div>
+  <div
+    [ngClass]="{ color__code: true, 'color__code--active': activateHover }"
+    class="color__code"
+  >
+    <span>{{ currentHexa }}</span>
+  </div>
+</div>

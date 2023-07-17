@@ -1,0 +1,13 @@
+<div class="color-list">
+  <div class="color-list__list">
+    <ng-container *ngFor="let item of colorList">
+      <app-color-item
+        [name]="item.name"
+        [codeHexa]="item.codeHex"
+      ></app-color-item>
+    </ng-container>
+  </div>
+  <div class="color-list__footer">
+    <span>{{ namePalette }}</span>
+  </div>
+</div>

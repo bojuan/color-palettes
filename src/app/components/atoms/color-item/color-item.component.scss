@@ -1,0 +1,27 @@
+.color {
+  min-width: 100px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 12px;
+
+  &__code {
+    position: absolute;
+    bottom: -10px;
+    background-color: #ffffffa9;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0px;
+    opacity: 0;
+    transition: all .3s ease-out;
+
+    &--active{
+        opacity: 1;
+        bottom: 0;
+    }
+  }
+}

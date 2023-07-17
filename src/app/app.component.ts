@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ColorList } from '../interfaces/color';
+import { dataColor } from 'src/utils/constants/data-fake';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'color-palettes';
+  colorPalettes: ColorList[] = dataColor;
 }
